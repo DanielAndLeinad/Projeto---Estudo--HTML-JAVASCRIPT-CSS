@@ -1,3 +1,4 @@
+/* RESET DE ESTILOS */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   list-style: none;
 }
 
+/* ESTILOS GERAIS DO BODY */
 body {
   background-color: #000;
   color: #fff;
@@ -12,6 +14,7 @@ body {
   overflow: hidden;
 }
 
+/* CABEÇALHO DO SITE */
 header {
   position: fixed;
   width: 90vw;
@@ -22,92 +25,99 @@ header {
   grid-template-columns: 1fr 600px;
   gap: 10%;
   z-index: 2;
-
-  & img {
-    width: 250px;
-  }
-  & nav {
-    & ul {
-      display: grid;
-      grid-template-columns: repeat(3, 200px);
-    }
-  }
 }
 
+/* LOGO DO SITE */
+header img {
+  width: 250px;
+}
+
+/* NAVEGAÇÃO DO SITE */
+header nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+}
+
+/* SEÇÃO PRINCIPAL DO SITE */
 section {
   background-image: radial-gradient(#7f3d9e, #6d00d9);
   height: 100vh;
   position: relative;
+}
 
-  & .list {
-    width: 70vw;
-    height: 100%;
-    margin: auto;
-    position: relative;
+/* LISTA DE CARROS */
+.list {
+  width: 70vw;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
 
-    & .item {
-      position: absolute;
-      inset: 0;
+/* ITEM DA LISTA DE CARROS */
+.item {
+  position: absolute;
+  inset: 0;
+}
 
-      & .car-img {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 70%;
+/* IMAGEM DO CARRO */
+.car-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70%;
+}
 
-        & img {
-          width: 100%;
-          transform: rotate(-30deg);
-        }
-      }
-      & .content {
-        position: absolute;
-        right: 100px;
-        width: 70%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: end;
-        gap: 20px;
+.car-img img {
+  width: 100%;
+  transform: rotate(-30deg);
+}
 
-        & .car-info {
-          font-weight: bold;
-        }
-        & h2 {
-          font-size: 8em;
-          line-height: 1em;
-        }
+/* CONTEÚDO DO CARRO */
+.content {
+  position: absolute;
+  right: 100px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  gap: 20px;
+}
 
-        & .description {
-          color: #d9d9d9;
-          font-size: 12px;
-          text-align: right;
-          max-width: 400px;
-        }
+/* INFORMAÇÕES DO CARRO */
+.car-info {
+  font-weight: bold;
+}
 
-        & .information {
-          border-radius: 30px;
-          height: 35px;
-          width: 120px;
-          text-transform: uppercase;
-          border: 2px solid #791fd3;
-          background-color: #beff1b;
-          color: #000;
-          cursor: pointer;
-          font-weight: bold;
-        }
-      }
-    }
+/* TÍTULO DO CARRO */
+.content h2 {
+  font-size: 8em;
+  line-height: 1em;
+}
 
-  
+/* DESCRIÇÃO DO CARRO */
+.description {
+  color: #d9d9d9;
+  font-size: 12px;
+  text-align: right;
+  max-width: 400px;
+}
 
-    .arrows {
-      & button {
-        & img {
-          width: 100px;
-        }
-      }
-    }
-  }
+/* BOTÃO DE INFORMAÇÃO DO CARRO */
+.information {
+  border-radius: 30px;
+  height: 35px;
+  width: 120px;
+  text-transform: uppercase;
+  border: 2px solid #791fd3;
+  background-color: #beff1b;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* SETAS DE NAVEGAÇÃO */
+.arrows button img {
+  width: 100px;
 }
